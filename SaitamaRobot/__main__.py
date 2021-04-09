@@ -74,7 +74,7 @@ Və aşağıdakılar:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nBütün əmrlər / və ya ! ilə işlədilir.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/a72675a4c422a426d748d.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/9b788bec1dd6dc3262fa0.jpg"
 
 DONATE_STRING = """Bəxşişə ehtiyyac yoxdu təşəkkürlər."""
 
