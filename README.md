@@ -24,5 +24,5 @@ Botu qurmaq üçün
 
 ### Qeyd
 Botun tərcüməsi <a href="https://t.me/bakinech">Muko</a> aiddir. Repoda bəzi dəyişikliklər və problem <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən düzəldilib.
-
-<a href="https://t.me/RoBotlarimTg">RoBotlarım👨🏻‍💻</a>
+## Copyright
+Bizi telegramda izləyin <a href="https://t.me/RoBotlarimTg">RoBotlarım👨🏻‍💻</a>
