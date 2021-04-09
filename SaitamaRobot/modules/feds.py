@@ -2109,7 +2109,7 @@ def fed_user_help(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN)
 
 
-__mod_name__ = "Federasiya"
+__mod_name__ = "🌐Federasiya"
 
 __help__ = """
 Hərşey əla gedir, Amma biri qrupuva gəlir. Xoş məqsədlə yox. Və sən onu bütün qruplarından banlamaq istəyərsən.

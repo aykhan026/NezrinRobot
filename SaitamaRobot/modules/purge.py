@@ -76,4 +76,4 @@ __help__ = """
  - /purge <x ədədi>: yanıtlanan mesajdan aşağıdakı x sayda mesajı silir.
 """
 
-__mod_name__ = "Silmək"
+__mod_name__ = "🗑️Silmək"

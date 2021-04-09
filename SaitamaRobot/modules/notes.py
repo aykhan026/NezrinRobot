@@ -502,7 +502,7 @@ Buton əlavə etmək üçün isə \
 
 """
 
-__mod_name__ = "Notlar"
+__mod_name__ = "📕Notlar"
 
 GET_HANDLER = CommandHandler("get", cmd_get)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get)
