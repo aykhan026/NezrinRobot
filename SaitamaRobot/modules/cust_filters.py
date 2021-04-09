@@ -612,7 +612,7 @@ necəsən?
 
 """
 
-__mod_name__ = "Filtrlər"
+__mod_name__ = "💬Filtrlər"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
