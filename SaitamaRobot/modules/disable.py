@@ -344,7 +344,7 @@ if is_module_loaded(FILENAME):
     • `/listcmds`*:* dəyişdirlə bilən əmrləri göstərir
     """
 
-    __mod_name__ = "Əmr deaktiv etmək"
+    __mod_name__ = "📴Əmr deaktiv etmək"
 
 else:
     DisableAbleCommandHandler = CommandHandler
