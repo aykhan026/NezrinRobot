@@ -477,7 +477,7 @@ Qeyd:
  • `<stiker linki>` `https://t.me/addstickers/<stiker>` olaraq tapıla bilər və ya hər hansısa stikerə reply verin
 """
 
-__mod_name__ = "Stiker Qara Siyahı"
+__mod_name__ = "🚮Stiker Qara Siyahı"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True)
