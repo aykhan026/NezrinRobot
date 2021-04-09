@@ -353,7 +353,7 @@ Antiflood sayəsində qrupunuza flood edənlərə qarşl müəyyən tədbirlər 
  `1w` = 1 həftə
  """
 
-__mod_name__ = "Anti-Flood"
+__mod_name__ = "🗣️Anti-Flood"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.group, check_flood)
