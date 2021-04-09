@@ -1,0 +1,168 @@
+{
+      "name": "PakizəRobot",
+      "description": "Azərbaycanca olan çox funksiyalı qrup idarə botu.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Saitama"
+      ],   
+   "repository": "https://github.com/muko631/muko",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "TOKEN": {
+         "description": "Bot token buraya",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Telethon bazalı modullar üçün my.telegram.org adresindən Api ID alın.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Telethon bazalı modullar üçün my.telegram.org adresindən Api Hash alın",
+         "required": true,
+         "value": ""
+      },    
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "postgres sql db, boş buraxa bilərsiniz.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "Sənin User ID.",
+         "required": true,
+         "value": "792109647"
+      },
+      "OWNER_USERNAME": {
+         "description": "@ işarəsi olmadan username",
+         "value": "Rihad"
+      },
+      "SUPPORT_CHAT": {
+         "description": "Botunuzn Support qrupunun linki @ işarəsi olmadan. Öz qrupunuzu eliyin Pakizənin qrup linkini yox.",
+         "required": true,
+         "value": "SupportQrupum"
+      },
+      "EVENT_LOGS": {
+         "description": "Vacib hadisələrin saxlanacağı qrup/kanal ID",
+         "required": true,
+         "value": "-123456798"
+      },
+      "JOIN_LOGGER": {
+         "description": "Botun əlavə olunduğu qruplar bu kanalda/qrupda saxlanılacaq",
+         "required": true,
+         "value": "-123456798"
+      },      
+      "CASH_API_KEY": {
+         "description": "Valyuta modulu üçün API key. https://www.alphavantage.co/support/#api-key adresindən alın",
+         "required": true,
+         "value": "-xyz"
+      },
+      "TIME_API_KEY": {
+         "description": "Timezone modulu üçün API key. https://timezonedb.com/api adresindən alın",
+         "required": true,
+         "value": "-xyz"
+      },
+      "DEV_USERS": {
+         "description": "Bot developer'lərinin ID. Əgər yoxdursa hazırki ID ləri dəyişməyin.",
+         "required": false,
+         "value": "660565862 459034222 189005567 346981140 367222759"
+      },
+      "sw_api": {
+         "description": "Spamwatch API Token. @SpamWatchBot botundan alın.",
+         "required": false,
+         "value": ""
+      }, 
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "value": "True"
+      },
+      "DRAGONS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": "459034222 189005567 660565862 346981140 367222759"
+      },
+      "DEMONS": {
+         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "required": false,
+         "value": "615304572"
+      },
+      "TIGERS": {
+         "description": "A space separated list of user IDs who you wanna assign as tiger users.",
+         "required": false,
+         "value": ""
+      },
+      "WOLVES": {
+         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "required": false,
+         "value": ""
+      },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "value": "ANYTHING"
+      },
+      "WEBHOOK": {
+         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
+         "required": false,
+         "value": ""
+      },
+      "PORT": {
+         "description": "Port to use for your webhooks. Better leave this as it is on heroku",
+         "required": false,
+         "value": ""
+      },
+      "URL": {
+         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": "cleaner rss connection"
+      }, 
+      "BL_CHATS": {
+         "description": "List of chats you want blacklisted.",
+         "required": false,
+         "value": ""
+      },
+      "ALLOW_EXCL": {
+         "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
+         "value": "True"
+      },
+      "DONATION_LINK": {
+         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
+         "required": false,
+         "value": "https://www.paypal.me/PaulSonOfLars"
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "value": "True"
+      },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+   },      
+      "BAN_STICKER": {
+         "description": "ID of the sticker you want to use when banning people.",
+         "required": false,
+         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+      },
+      "WALL_API": {
+         "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
+      }
+      
+   }
+}
