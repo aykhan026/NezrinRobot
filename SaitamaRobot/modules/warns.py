@@ -473,7 +473,7 @@ məsələn: `/addwarn "axmaq adminlər" Adminlərlə düzgün danış`.
  • `/strongwarn <on/yes/off/no>`*:* Aktiv olduqda limitə çatanlar banlanır. Deaktiv olduqda limitə çatanlar qrupdan atılır.
 """
 
-__mod_name__ = "Xəbərdarlıqlar"
+__mod_name__ = "❗Xəbərdarlıq"
 
 WARN_HANDLER = CommandHandler("warn", warn_user, filters=Filters.group)
 RESET_WARN_HANDLER = CommandHandler(["resetwarn", "resetwarns"],

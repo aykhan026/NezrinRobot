@@ -111,7 +111,7 @@ __help__ = """
  • `/clearrules`*:* qrupdakı qaydaları silir.
 """
 
-__mod_name__ = "Qaydalar"
+__mod_name__ = "📜Qaydalar"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.group)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.group)

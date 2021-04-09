@@ -430,7 +430,7 @@ __help__ = """
 • `/stickers <paket_adı>`*:* stiker paketi axtarışı edir
 """
 
-__mod_name__ = "Stickers"
+__mod_name__ = "👾Stikerlər"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 KANG_HANDLER = DisableAbleCommandHandler("stik", kang, admin_ok=True)

@@ -269,7 +269,7 @@ __help__ = """
 *NOTE:* In groups, only admins can add/remove RSS links to the group's subscription
 """
 
-__mod_name__ = "RSS Feed"
+__mod_name__ = "♨️RSS Feed"
 
 job = updater.job_queue
 
