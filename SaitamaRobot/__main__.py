@@ -51,14 +51,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Salam {} necəsən? mənim adım {}! 
-Mən Telegram qruplarını qorumaq üçün Azərbaycanca Olan Qrup İdarə Botuyam!.
-Bütün əmrlər üçün klik et /help.
+🙋🏻‍♀️Salam {} necəsən? mənim adım {}! 
+👮🏻‍♀️Mən Telegram qruplarını qorumaq üçün Azərbaycanca Olan Qrup İdarə Botuyam!.
+👩‍🔧Bütün əmrlər üçün klik et /help.
 """
 
 HELP_STRINGS = """
-Salamlar! Mənim adım *{}*.
-Mənimlə birlikdə qruplarınızı idarə edə bilərsiniz!.
+🙋🏻‍♀️Xoş gəldiniz! Mənim adım *{}*.
+👮🏻‍♀️Görünür köməyə ehdiyacınız var Məni qrupa əlavə edib admin edin.
+🛡️Aşağıda gördüyünüz modullarımla sizin qrupunuzu tam güvəndə saxlayacam!
 
 *Əsas* əmrlər:
  • /help: Kömək menyusu.
