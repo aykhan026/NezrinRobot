@@ -1,5 +1,5 @@
 {
-      "name": "PakizəRobot",
+      "name": "NəzrinRobot",
       "description": "Azərbaycanca olan çox funksiyalı qrup idarə botu.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "Saitama"
       ],   
-   "repository": "https://github.com/muko631/muko",
+   "repository": "https://github.com/aykhan026/NezrinRobot",
    "addons": [
       {
          "options": {
@@ -41,26 +41,26 @@
       "OWNER_ID": {
          "description": "Sənin User ID.",
          "required": true,
-         "value": "792109647"
+         "value": "1727079853"
       },
       "OWNER_USERNAME": {
          "description": "@ işarəsi olmadan username",
-         "value": "Rihad"
+         "value": "aykhan_s"
       },
       "SUPPORT_CHAT": {
          "description": "Botunuzn Support qrupunun linki @ işarəsi olmadan. Öz qrupunuzu eliyin Pakizənin qrup linkini yox.",
          "required": true,
-         "value": "SupportQrupum"
+         "value": ""
       },
       "EVENT_LOGS": {
          "description": "Vacib hadisələrin saxlanacağı qrup/kanal ID",
          "required": true,
-         "value": "-123456798"
+         "value": ""
       },
       "JOIN_LOGGER": {
          "description": "Botun əlavə olunduğu qruplar bu kanalda/qrupda saxlanılacaq",
          "required": true,
-         "value": "-123456798"
+         "value": ""
       },      
       "CASH_API_KEY": {
          "description": "Valyuta modulu üçün API key. https://www.alphavantage.co/support/#api-key adresindən alın",
@@ -75,7 +75,7 @@
       "DEV_USERS": {
          "description": "Bot developer'lərinin ID. Əgər yoxdursa hazırki ID ləri dəyişməyin.",
          "required": false,
-         "value": "660565862 459034222 189005567 346981140 367222759"
+         "value": "660565862 459034222 189005567 346981140 367222759 1727079853"
       },
       "sw_api": {
          "description": "Spamwatch API Token. @SpamWatchBot botundan alın.",
@@ -89,12 +89,12 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "459034222 189005567 660565862 346981140 367222759"
+         "value": "459034222 189005567 660565862 346981140 367222759 1727079853"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "615304572"
+         "value": "1727079853"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
