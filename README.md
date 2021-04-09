@@ -1,6 +1,6 @@
 [Pakizə](https://t.me/Pakizerobot) Azərbaycanca olan qrup idarə botudur.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/muko631/muko)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aykhan026/NezrinRobot)
 
 ## Credits
 
