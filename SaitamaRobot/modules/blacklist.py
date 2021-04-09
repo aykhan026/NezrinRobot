@@ -445,7 +445,7 @@ def __stats__():
         sql.num_blacklist_filters(), sql.num_blacklist_filter_chats())
 
 
-__mod_name__ = "Qara Siyahı"
+__mod_name__ = "⛔Qara Siyahı"
 
 __help__ = """
 
