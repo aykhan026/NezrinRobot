@@ -171,17 +171,17 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Wow Sahibim gəldi😎.",
+                    "WoW. Sahibim Aykhan Gəldi😎",
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
-                               f"yuppi Muko usta gəldi")
+                               f"Aykhan usta gəldi")
                 continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Vau! Böyük şəxsiyyətlərdən biri developerim gəldi!",
+                    "Vau! Böyük şəxsiyyətlərdən biri developerim Aykhan gəldi!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -483,13 +483,13 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Rihad Usta qrupu tərk etdi :(..", reply_to_message_id=reply)
+                    "Aykhan Usta qrupu tərk etdi :(..", reply_to_message_id=reply)
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Pakizə Team'da görüşərik! :)",
+                    "RoBotlarimTg'da görüşərik! :)",
                     reply_to_message_id=reply,
                 )
                 return
