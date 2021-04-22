@@ -8,31 +8,31 @@ from sqlalchemy import (BigInteger, Boolean, Column, Integer, String,
                         UnicodeText)
 
 DEFAULT_WELCOME = 'Hey {first}, xoşgəldin necəsən?'
-DEFAULT_GOODBYE = 'Get və gəlmə!'
+DEFAULT_GOODBYE = 'Ümid edirəmki yenə görüşəcəyik!'
 
 DEFAULT_WELCOME_MESSAGES = [
-    "{first} buradadır!",  #Discord welcome messages copied
-    "Oyunçu {first} hazırdır",
-    "Vəhşi {first} gəldi.",
-    "{first} bir şir kimi gəldi!",
+    "{first} Xoş Gəldin!",  #Discord welcome messages copied
+    "{first} Qrupa qoşuldu!",
+    "Əla! {first} gəldi.",
+    "{first} Artıq bizimləsən!",
     "{first} partimizə qoşuldu.",
-    "Xoşgəldin, {first}. Pizza gətirəcəyivi düşnürdük.",
-    "Xoşgəldin, {first}. Silahlarıvı qapıda qoy.",
-    "{first} haradadır? Haa qrupdaymış!",
+    "Xoşgəldin, {first}. Bura olduqca mehribandır.",
+    "Xoşgəldin, {first}. Çıxacagsansa indidən çıx 😒.",
+    "{first} Xoş gəldin! Həmişə sən gələsən!",
     "Hey! Millət qulaq asın! {first} indicə bizə qoşuldu!",
-    "{first} Qoşuldu! - Ok.",  #Discord welcome messages end.
+    "{first} Artıq bizim qrupdadır.",  #Discord welcome messages end.
     "Aramıza Xoşgəldin {first}.",
     "Artıq sən də bizdənsən {first}",
 ]
 DEFAULT_GOODBYE_MESSAGES = [
-    "{first} lobby tərk etdi.",
-    "{first} klanı tərk etdi.",
-    "{first} oyunu tərk etdi.",
-    "Səni yaxşı tanıyırdım, {first}!",
-    "Gözəl zaman keçirdik {first}.",
+    "{first} Bizi tərk edəcəyini düşünməzdim.",
+    "{first} Qrupu tərk etdi.",
+    "{first} Qrupdan çıxdı.",
+    "Əlvida, {first}! Mən səni gözləyəcəm",
+    "Gözəl zaman keçirdik {first} ama getdin.",
     "Tezliklə görüşmək ümidi ilə, {first}.",
-    "Əlvida, {first}.",
-    "Goodbye {first}! Guess who's gonna miss you :')",
+    "Əlvida, {first} səninçün darıxacam",
+    "İstifadəçi {first} Qrupu tərk etdi!",
 ]
 # Line 111 to 152 are references from https://bindingofisaac.fandom.com/wiki/Fortune_Telling_Machine
 
