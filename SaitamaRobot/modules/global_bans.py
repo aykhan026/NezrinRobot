@@ -69,7 +69,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "Bu istifadəçi PakizəTeam-in bir parçasıdır\nOna qarşı bunu edə bilmərəm."
+            "Bu istifadəçi RoBotlarimTg-in bir parçasıdır\nOna qarşı bunu edə bilmərəm."
         )
         return
 
