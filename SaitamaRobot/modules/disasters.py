@@ -448,7 +448,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>PakizəTeam Canavarları 🐺:</b>\n"
+    reply = "<b>NəzrinRobot Canavarları 🐺:</b>\n"
     bot = context.bot
     for each_user in WOLVES:
         user_id = int(each_user)
@@ -464,7 +464,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>PakizəTeam Pələngləri 🐯:</b>\n"
+    reply = "<b>NəzrinRobot Pələngləri 🐯:</b>\n"
     bot = context.bot
     for each_user in TIGERS:
         user_id = int(each_user)
@@ -480,7 +480,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>PakizəTeam Şeytanları 👹:</b>\n"
+    reply = "<b>NəzrinRobot Şeytanları 👹:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -496,7 +496,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>PakizəTeam Əjdərhaları 🐉:</b>\n"
+    reply = "<b>NəzrinRobot Əjdərhaları 🐉:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -526,6 +526,7 @@ def devlist(update: Update, context: CallbackContext):
 __help__ = f"""
 *⚠️ Diqqət:*
 Aşağıdakı əmrləri yalnız bot adminləri istifadə edə bilər. Qrup sahibləri/adminləri yox. 
+* | RoBotlarimTg | NəzrinRobot | aykhan_s | *
 
  ╔ *Bot adminlərinin siyahısı:*
  ╠ `/dragons`*:* Əjdərhalar
