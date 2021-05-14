@@ -49,3 +49,4 @@ hachoir
 pybase64
 pySmartDL
 validators
+google_trans_new
