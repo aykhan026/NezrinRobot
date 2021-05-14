@@ -424,13 +424,15 @@ def makepack_internal(
 
 
 __help__ = """
+• `/q`*:* yanıtladığınız mesajı stiker edəcək.
+• `/q reng`*:* yanıtladığınız mesajı müxtəlif rənglərdə stiker edəcək.
 • `/stickerid`*:* yanıt verilən stikerin ID göstərir.
 • `/getsticker`*:* yanıt verilən stikeri png formatında atır.
 • `/stik`*:* yanıt verilən şəkil və ya stikeri paketə əlavə edir.
 • `/stickers <paket_adı>`*:* stiker paketi axtarışı edir
 """
 
-__mod_name__ = "👾Stikerlər"
+__mod_name__ = "🧸Stikerlər"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 KANG_HANDLER = DisableAbleCommandHandler("stik", kang, admin_ok=True)
