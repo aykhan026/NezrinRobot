@@ -31,6 +31,9 @@ This will create two buttons on a single line, instead of one button per line.
 Keep in mind that your message <b>MUST</b> contain some text other than just a button!
 """
 
+@run_async
+def roll(update: Update, context: CallbackContext):
+    update.message.reply_text(random.choice(range(1, 7)))
 
 @run_async
 @user_admin
