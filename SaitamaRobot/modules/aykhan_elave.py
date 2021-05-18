@@ -25,8 +25,8 @@ __help__ = """
  • `/toss`*:* Tosses A coin
 """
 
-TOSSS_HANDLER = DisableAbleCommandHandler("tosss", tosss)
-TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
+TOSSS_HANDLER = ("tosss", tosss)
+TOSS_HANDLER = ("toss", toss)
 
 
 dispatcher.add_handler(TOSSS_HANDLER)
