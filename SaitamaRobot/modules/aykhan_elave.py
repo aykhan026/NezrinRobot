@@ -5,19 +5,19 @@ import time
 from typing import Optional
 from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext, run_async
-from tswift import Song
 from telegram.error import BadRequest
 
-import MashaRoBot.modules.fun_strings as fun_strings
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.alternate import send_message, typing_action
-from MashaRoBot.modules.helper_funcs.chat_status import (is_user_admin)
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
+import SaitamaRobot.modules.aykhan as aykhan
+
+
 
 @run_async
 def toss(update: Update, context: CallbackContext):
-    update.message.reply_text(random.choice(fun_strings.TOSS))
+    update.message.reply_text(random.choice(aykhan.TOSS))
+
+@run_async
+def toss(update: Update, context: CallbackContext):
+    update.message.reply_text(random.choice(aykhan.TOSSS))
 
 
 __help__ = """
