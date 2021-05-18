@@ -25,10 +25,6 @@ __help__ = """
  • `/toss`*:* Tosses A coin
 """
 
-TOSSS_HANDLER = ("tosss", tosss)
-TOSS_HANDLER = ("toss", toss)
-
-
 dispatcher.add_handler(TOSSS_HANDLER)
 dispatcher.add_handler(TOSS_HANDLER)
 
