@@ -10,19 +10,19 @@ async def tagall(client, message):
     await message.reply("✅`Tağ Prosesi Başladı...`")
     chat_id = message.chat.id
     string = ""
-    limit = 100
+    limit = 10
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
         tag = member.user.mention
-        if limit <= 8:
+        if limit <= 10:
             if tag != None:
                 string += f"👤{tag}\n"
             else:
                 string += f"{member.user.mention}\n"
-            limit += 100
+            limit += 10
         else:
             await client.send_message(chat_id, text=string)
-            limit = 100
+            limit = 10
             string = ""
             
 
