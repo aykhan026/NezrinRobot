@@ -10,8 +10,6 @@ async def tagall(client, message):
     await message.reply("✅`Tağ Prosesi Başladı...`")
     chat_id = message.chat.id
     string = get_text(message)
-    if not string:
-    string = "❤️"
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
