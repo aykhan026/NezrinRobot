@@ -8,17 +8,20 @@ from SaitamaRobot import pbot
 @admins_only
 async def tagall(client, message):
     await message.reply("`Tağ Prosesi Başladıldı.....`")
-    sh = get_text(message)
-    if not sh:
-        sh = "Darıxmışam sizinçün"
-    mentions = ""
-    async for member in client.iter_chat_members(message.chat.id):
-        mentions += member.user.mention + " "
-    n = 1
-    kk = [mentions[i : i + n] for i in range(0, len(mentions), n)]
-    for i in kk:
-        j = f"<b>{sh}</b> \n{i}"
-        await client.send_message(message.chat.id, j, parse_mode="html")
+    seasons = get_text(message)
+    if not get_text(message)
+else:
+		seasons = ""
+
+	chat = await tag.get_input_chat()
+	a_=0
+	await tag.delete()
+	async for i in bot.iter_participants(chat):
+		if a_ == 500:
+			break
+		a_+=5
+		await tag.client.send_message(tag.chat_id, "[{}](tg://user?id={}) {}".format(i.first_name, i.id, seasons))
+		sleep(1.4)
 
 
 __mod_name__ = "🖇️Tağ"
