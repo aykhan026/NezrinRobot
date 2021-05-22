@@ -20,7 +20,7 @@ async def tagall(client, message):
 		if a_ == 500:
 			break
 		a_+=5
-		await tag.client.send_message(tag.chat_id, "[{}](tg://user?id={}) {}".format(i.first_name, i.id, seasons))
+		await client.send_message(message.chat_id, "[{}](tg://user?id={}) {}".format(i.first_name, i.id, seasons))
 		sleep(1.4)
 
 
