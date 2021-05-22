@@ -7,13 +7,13 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.delete()
+    await message.reply("salam")
     chat_id = message.chat.id
     string = ""
     limit = 1
-    icm = client.iter_chat_members(chat_id)
+    icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
-        tag = member.user.username
+        tag = member.user.mention
         if limit <= 5:
             if tag != None:
                 string += f"@{tag}\n"
