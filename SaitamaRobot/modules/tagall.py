@@ -9,8 +9,8 @@ from SaitamaRobot import pbot
 async def tagall(client, message):
     await message.reply("✅`Tağ Prosesi Başladı...`")
     chat_id = message.chat.id
-    string = ""
-    limit = 10
+    string = "❤️"
+    limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
         tag = member.user.mention
@@ -19,7 +19,7 @@ async def tagall(client, message):
                 string += f"👤{tag}\n"
             else:
                 string += f"{member.user.mention}\n"
-            limit += 10
+            limit += 40
         else:
             await client.send_message(chat_id, text=string)
             limit = 10
