@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from YoneRobot.pyrogramee.pluginshelper import admins_only, get_text
+from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
 
 
