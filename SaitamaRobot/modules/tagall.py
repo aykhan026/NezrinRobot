@@ -9,8 +9,8 @@ from SaitamaRobot import pbot
 async def tagall(client, message):
     await message.reply("`Tağ Prosesi Başladıldı.....`")
     seasons = get_text(message)
-    if not get_text(message)
-else:
+    if get_text(message)
+     else:
 		seasons = ""
 
 	chat = await tag.get_input_chat()
