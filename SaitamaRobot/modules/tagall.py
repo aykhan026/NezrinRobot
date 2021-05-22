@@ -14,7 +14,7 @@ async def tagall(client, message):
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
         tag = member.user.mention
-        if limit <= 2:
+        if limit <= 8:
             if tag != None:
                 string += f"👤{tag}\n"
             else:
