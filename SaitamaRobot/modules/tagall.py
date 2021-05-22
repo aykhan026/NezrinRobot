@@ -6,7 +6,7 @@ from SaitamaRobot import pbot
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
-def tagall(client, message):
+async def tagall(client, message):
     await message.reply("`Tağ Prosesi Başladıldı.....`")
     sh = get_text(message)
     if not sh:
