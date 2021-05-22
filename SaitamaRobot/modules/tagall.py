@@ -11,7 +11,7 @@ async def tagall(client, message):
     sh = get_text(message)
     if not sh:
         sh = "Necəsizz🥰"
-    mentions = ""
+    mentions = "1"
     async for member in client.iter_chat_members(message.chat.id):
         mentions += member.user.mention + " "
     n = 330
