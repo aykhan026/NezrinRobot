@@ -16,14 +16,14 @@ async def tagall(client, message):
         tag = member.user.mention
         if limit <= 40:
             if tag != None:
-                string += f"👋{tag}\n"
+                string += f"👋{tag}"
             else:
-                string += f"{member.user.mention}\n"
+                string += f"{member.user.mention}"
             limit += 40
         else:
             await client.send_message(chat_id, text=string)
             limit = 40
-            string = ""
+            string = "👋"
             
 
 __mod_name__ = "🖇️Tağ"
