@@ -7,10 +7,10 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("♻️`Tağ Prosesi Başladıldı.....`")
+    await message.reply("`Tağ Prosesi Başladıldı.....`")
     sh = get_text(message)
     if not sh:
-        sh = "Darıxmışam sizinçün 🤭"
+        sh = "Darıxmışam sizinçün"
     mentions = ""
     async for member in client.iter_chat_members(message.chat.id):
         mentions += member.user.mention + " "
@@ -24,5 +24,4 @@ async def tagall(client, message):
 __mod_name__ = "🖇️Tağ"
 __help__ = """
 - /tagall : Hərkəsi tağ edər
-- /tagall <mesaj> : Hərkəsi tağ edər və yazdığınız mesaj tağ da görsənər
 """
