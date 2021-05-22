@@ -7,7 +7,7 @@ from YoneRobot import pbot
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("`Processing.....`")
+    await message.reply("♻️`Tağ Prosesi Başladıldı.....`")
     sh = get_text(message)
     if not sh:
         sh = "Darıxmışam sizinçün 🤭"
