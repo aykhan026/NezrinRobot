@@ -4,7 +4,7 @@ from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
 
 
-@pbot.on_message(filters.command('all', ['!']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
