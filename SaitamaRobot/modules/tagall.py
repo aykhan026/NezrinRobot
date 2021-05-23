@@ -6,28 +6,13 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
-from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
-    can_delete_messages, user_is_admin)
-from SaitamaRobot import telethn
-import time
-from telethon import events
-from telegram import Update
 
 
-@pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 
+@pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
-if event.from_id is None:
-        return
-if not await user_is_admin(
-            user_id=event.sender_id, message=event) and event.from_id not in [
-                1087968824
-            ]:
-        await event.reply("Yalnız adminlər bu əmri işlədə bilər")
-        return
-
-    
+    chat_id = message.chat.id
     string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
@@ -45,7 +30,7 @@ if not await user_is_admin(
             string = ""
 
 
-@pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('tag', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
