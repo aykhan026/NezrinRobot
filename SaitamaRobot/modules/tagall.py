@@ -26,7 +26,7 @@ async def tagall(client, message):
             string = ""
 
 
-@pbot.on_message(filters.command("tag") & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
@@ -52,6 +52,7 @@ async def tagall(client, message):
 __mod_name__ = "🖇️Tağ"
 __help__ = """
 Yalnız adminlər tərəfindən istifadə oluna bilər !
-- /all : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
-- /tag : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
+Bu əmrlər @ , / , ! ilə işlədilir
+- @all : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
+- @tag : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
 """
