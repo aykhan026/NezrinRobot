@@ -2,36 +2,29 @@
 # Kopyalamaq dəyişdirməy qadağandır
 # t.me/aykhan_s | t.me/RoBotlarimTg
 
-
-import html
 from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
-from telegram import ParseMode, Update #aykhan
-from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
-from telegram.utils.helpers import mention_html
-
-from SaitamaRobot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
-                          WOLVES, dispatcher)
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import (
-    bot_admin, can_restrict, connection_status, is_user_admin,
-    is_user_ban_protected, is_user_in_chat, user_admin, user_can_ban)
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
-from SaitamaRobot.modules.log_channel import gloggable, loggable
-
+from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
+    can_delete_messages, user_is_admin)
+from SaitamaRobot import telethn
+import time
+from telethon import events
 
 
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
-@run_async
-@bot_admin
-@user_admin
-@loggable
+
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
+
+if not await user_is_admin(
+            user_id=event.sender_id, message=event) and event.from_id not in [
+                1087968824
+            ]:
+        await event.reply("Yalnız adminlər bu əmri işlədə bilər")
+        return
+
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -51,10 +44,6 @@ async def all(client, message):
 
 
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
-@run_async
-@bot_admin
-@user_admin
-@loggable
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
