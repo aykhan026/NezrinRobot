@@ -11,6 +11,7 @@ from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
 from SaitamaRobot import telethn
 import time
 from telethon import events
+from telegram import Update
 
 
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
