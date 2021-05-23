@@ -5,6 +5,7 @@ from SaitamaRobot import pbot
 
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
+@get_text
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
@@ -27,6 +28,7 @@ async def all(client, message):
 
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
+@get_text
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
