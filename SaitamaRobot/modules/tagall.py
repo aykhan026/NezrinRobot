@@ -2,9 +2,12 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
+from SaitamaRobot.modules.log_channel import loggable
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from SaitamaRobot.modules.helper_funcs.chat_status import (
     can_delete,
+    bot_admin,
+    can_pin,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
