@@ -17,7 +17,8 @@ from telethon import events
 
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
-
+if event.from_id is None:
+        return
 if not await user_is_admin(
             user_id=event.sender_id, message=event) and event.from_id not in [
                 1087968824
