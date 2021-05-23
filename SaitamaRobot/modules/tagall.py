@@ -7,7 +7,7 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("✅ Qarışıq Tağ Prosesi Başladı...")
+    await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -16,7 +16,7 @@ async def tagall(client, message):
         tag = member.user.mention
         if limit <= 5:
             if tag != None:
-                string += f"✨ {tag}\n"
+                string += f"🥳 {tag}\n"
             else:
                 string += f"{member.user.mention}\n"
             limit += 1
@@ -29,7 +29,7 @@ async def tagall(client, message):
 @pbot.on_message(filters.command("tag") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("✅ Tək-Tək Tağ Prosesi Başladı...")
+    await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -62,8 +62,8 @@ async def tagall(client, message):
     limit = 1
     kk = [mentions[i : i + n] for i in range(0, len(mentions), n)]
     for i in kk:
-       limit = 1
         j = f"<b>{sh}</b> \n{i}"
+     limit = 1
         await client.send_message(message.chat.id, j)
        limit = 1
 
