@@ -7,7 +7,7 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("✅`Tağ Prosesi Başladı...`")
+    await message.reply("✅ Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -29,7 +29,7 @@ async def tagall(client, message):
 @pbot.on_message(filters.command("tag") & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("✅`Tağ Prosesi Başladı...`")
+    await message.reply("✅ Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
     string = ""
     limit = 1
