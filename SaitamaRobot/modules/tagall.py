@@ -50,6 +50,7 @@ async def tagall(client, message):
 
 __mod_name__ = "🖇️Tağ"
 __help__ = """
+Yalnız adminlər tərəfindən istifadə oluna bilər !
 - /tagall : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
 - /tag : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
 """
