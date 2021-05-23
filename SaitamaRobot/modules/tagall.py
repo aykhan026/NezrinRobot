@@ -3,7 +3,7 @@ from pyrogram import filters
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
 
-@pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 @admins_only
 @get_text
 async def all(client, message):
@@ -26,7 +26,7 @@ async def all(client, message):
             string = ""
 
 
-@pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('tag', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 @admins_only
 @get_text
 async def tag(client, message):
