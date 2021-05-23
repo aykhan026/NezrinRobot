@@ -59,8 +59,6 @@ async def tagall(client, message):
     async for member in client.iter_chat_members(message.chat.id):
         mentions += member.user.mention + " "
     if limit <= 1:
-    n = 300
-    limit = 1
     kk = [mentions[i : i + n] for i in range(0, len(mentions), n)]
     for i in kk:
         j = f"<b>{sh}</b> \n{i}"
