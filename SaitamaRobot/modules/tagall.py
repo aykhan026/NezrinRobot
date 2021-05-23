@@ -2,9 +2,17 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
+from SaitamaRobot.modules.helper_funcs.chat_status import (
+    can_delete,
+    is_user_admin,
+    user_not_admin,
+    is_bot_admin,
+    user_admin,
+)
 
 
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
+@user_admin
 async def tagall(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
@@ -26,6 +34,7 @@ async def tagall(client, message):
 
 
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
+@user_admin
 async def tagall(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
