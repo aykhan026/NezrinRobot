@@ -25,9 +25,8 @@ from SaitamaRobot.modules.log_channel import gloggable, loggable
 
 
 
-@pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @run_async
-@connection_status
 @bot_admin
 @can_restrict
 @user_admin
@@ -53,9 +52,8 @@ async def all(client, message):
             string = ""
 
 
-@pbot.on_message(filters.command('tag', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @run_async
-@connection_status
 @bot_admin
 @can_restrict
 @user_admin
