@@ -38,7 +38,7 @@ async def tagall(client, message):
         tag = member.user.mention
         if limit <= 1:
             if tag != None:
-                string += f"❤️ {tag}\n"
+                string += f"❤️ {tag} Bayaqdan səni gözləyirəm gəl qrupa 🥰\n"
             else:
                 string += f"{member.user.mention}\n"
             limit += 1
