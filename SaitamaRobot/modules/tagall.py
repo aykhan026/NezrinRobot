@@ -7,7 +7,7 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
+    await message.reply("🥳 *Qarışıq Tağ Prosesi Başladı...*")
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -29,7 +29,7 @@ async def tagall(client, message):
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @admins_only
 async def tagall(client, message):
-    await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
+    await message.reply("🥳 *Tək-Tək Tağ Prosesi Başladı...*")
     chat_id = message.chat.id
     string = ""
     limit = 1
@@ -51,8 +51,8 @@ async def tagall(client, message):
 
 __mod_name__ = "🖇️Tağ"
 __help__ = """
-Yalnız adminlər tərəfindən istifadə oluna bilər !
-Bu əmrlər @ , / , ! ilə işlədilir
-- @all : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
-- @tag : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
+✅ Yalnız adminlər tərəfindən istifadə oluna bilər !
+✅ Bu əmrlər *@* , */* , *!* ilə işlədilir
+- `@all` : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
+- `@tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
 """
