@@ -62,9 +62,10 @@ async def tagall(client, message):
     limit = 1
     kk = [mentions[i : i + n] for i in range(0, len(mentions), n)]
     for i in kk:
+       limit = 1
         j = f"<b>{sh}</b> \n{i}"
         await client.send_message(message.chat.id, j)
-
+       limit = 1
 
 
 __mod_name__ = "🖇️Tağ"
