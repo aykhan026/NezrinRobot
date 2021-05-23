@@ -28,9 +28,7 @@ from SaitamaRobot.modules.log_channel import gloggable, loggable
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @run_async
 @bot_admin
-@can_restrict
 @user_admin
-@user_can_ban
 @loggable
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
@@ -55,9 +53,7 @@ async def all(client, message):
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
 @run_async
 @bot_admin
-@can_restrict
 @user_admin
-@user_can_ban
 @loggable
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
