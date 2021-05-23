@@ -25,7 +25,7 @@ if not await user_is_admin(
         await event.reply("Yalnız adminlər bu əmri işlədə bilər")
         return
 
-    chat_id = message.chat.id
+    chat_id = await event.get_input_chat()
     string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
