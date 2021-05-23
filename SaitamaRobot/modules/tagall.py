@@ -2,25 +2,8 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
-from SaitamaRobot.modules.log_channel import loggable
-from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
-from SaitamaRobot.modules.helper_funcs.chat_status import (
-    can_delete,
-    bot_admin,
-    can_pin,
-    is_user_admin,
-    user_not_admin,
-    is_bot_admin,
-    user_admin,
-)
-
 
 @pbot.on_message(filters.command('all', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
-@run_async
-@bot_admin
-@can_pin
-@user_admin
-@loggable
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
@@ -42,11 +25,6 @@ async def all(client, message):
 
 
 @pbot.on_message(filters.command('tag', ['!', '@', '/']) & ~filters.edited & ~filters.bot)
-@run_async
-@bot_admin
-@can_pin
-@user_admin
-@loggable
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
