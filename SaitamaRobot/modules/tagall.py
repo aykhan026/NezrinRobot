@@ -6,7 +6,7 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, is_admin
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, Message,
                       ParseMode, Update, User)
 from telegram.ext import run_async
