@@ -66,7 +66,7 @@ async def song(client, message):
     await pbot.send_audio(
         chat_id=message.chat.id,
         audio=f"{str(user_id)}.mp3",
-        caption="🎧 @NezrinRobot",
+        caption="🎧 @NezrinRobot -la göndərildi",
         duration=int(yt.length),
         title=str(yt.title),
         performer=str(yt.author),
