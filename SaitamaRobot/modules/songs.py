@@ -78,10 +78,8 @@ async def song(client, message):
 __help__ = """
  *Mahnı adı və yaxudda Musiqiçi adı yaza bilərsiniz. *
 
- ✪ /song <musiqi adı>*:* Musiqini YouTubedən yükləyəcəm
- ✪ /video <video, klip adı>*:* uploads the video song in it's best quality available
- ✪ /lyrics <song>*:* returns the lyrics of that song.
-
+ - /song <musiqi adı>*:* Musiqini YouTubedən yükləyəcəm
+ 
 """
 
 __mod_name__ = "🎧Musiqi"
