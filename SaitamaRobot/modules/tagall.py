@@ -6,15 +6,8 @@ from pyrogram import filters
 
 from SaitamaRobot.pyrogramee.pluginshelper import admins_only, get_text
 from SaitamaRobot import pbot
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, is_admin
-from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, Message,
-                      ParseMode, Update, User)
-from telegram.ext import run_async
-
 
 @pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
-@run_async
-@user_admin
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat = update.effective_chat
