@@ -17,6 +17,8 @@ from telegram.ext import run_async
 @user_admin
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
+    chat = update.effective_chat
+    user = update.effective_user
     chat_id = message.chat.id
     string = ""
     limit = 1
