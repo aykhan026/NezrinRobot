@@ -46,19 +46,19 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
+        await message.reply("Axtarmaq üçün heçnə yazmadın😐\nNümunə:\n/song Okaber - Taboo")
         return ""
-    status = await message.reply("Processing...")
+    status = await message.reply("🥳Axtarıram...")
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("Song not found.")
+        await status.edit("Bu mahnını tapa bilmədim 😕")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
     try:
         download = audio.download(filename=f"{str(user_id)}")
     except Exception as ex:
-        await status.edit("Failed to download song")
+        await status.edit("Mahnını yükləyərkən xəta baş verdi 😕")
         LOGGER.error(ex)
         return ""
     os.rename(download, f"{str(user_id)}.mp3")
@@ -76,11 +76,10 @@ async def song(client, message):
 
 
 __help__ = """
- *You can either enter just the song name or both the artist and song
-  name. *
+ *Mahnı adı və yaxudda Musiqiçi adı yaza bilərsiniz. *
 
- ✪ /song <songname artist(optional)>*:* uploads the song in it's best quality available
- ✪ /video <songname artist(optional)>*:* uploads the video song in it's best quality available
+ ✪ /song <musiqi adı>*:* Musiqini YouTubedən yükləyəcəm
+ ✪ /video <video, klip adı>*:* uploads the video song in it's best quality available
  ✪ /lyrics <song>*:* returns the lyrics of that song.
 
 """
