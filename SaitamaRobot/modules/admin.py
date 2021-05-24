@@ -463,7 +463,7 @@ __help__ = """
  • `/promote`*:* istifadəçini admin edir
  • `/demote`*:* istifadəçinin adminliyini alır
  • `/title <başlıq>`*:* adminin adminlik tagını dəyişir
- • `/admincache`*:* admin siyahısını yeniləyir
+ • `/reload`*:* admin siyahısını yeniləyir
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
