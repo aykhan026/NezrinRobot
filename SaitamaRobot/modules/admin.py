@@ -478,7 +478,7 @@ DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote)
 
 SET_TITLE_HANDLER = CommandHandler("title", set_title)
 ADMIN_REFRESH_HANDLER = CommandHandler(
-    "admincache", refresh_admin, filters=Filters.group)
+    "reload", refresh_admin, filters=Filters.group)
 
 dispatcher.add_handler(ADMINLIST_HANDLER)
 dispatcher.add_handler(PIN_HANDLER)
@@ -491,7 +491,7 @@ dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
 __mod_name__ = "👮🏻‍♀️Admin"
 __command_list__ = [
-    "adminlist", "admins", "invitelink", "promote", "demote", "admincache"
+    "adminlist", "admins", "invitelink", "promote", "demote", "reload"
 ]
 __handlers__ = [
     ADMINLIST_HANDLER, PIN_HANDLER, UNPIN_HANDLER, INVITE_HANDLER,
