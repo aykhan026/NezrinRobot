@@ -48,7 +48,7 @@ async def song(client, message):
     if args.startswith(" "):
         await message.reply("Axtarmaq üçün heçnə yazmadın😐\nNümunə:\n/song Okaber - Taboo")
         return ""
-    status = await message.reply("🥳Axtarıram...")
+    status = await message.reply("🥳 Göndərirəmm...")
     video_link = yt_search(args)
     if not video_link:
         await status.edit("Bu mahnını tapa bilmədim 😕")
@@ -66,9 +66,9 @@ async def song(client, message):
     await pbot.send_audio(
         chat_id=message.chat.id,
         audio=f"{str(user_id)}.mp3",
+        caption="🎧 @NezrinRobot",
         duration=int(yt.length),
         title=str(yt.title),
-        cap = "🎧 @NezrinRobot",
         performer=str(yt.author),
         reply_to_message_id=message.message_id,
     )
