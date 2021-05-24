@@ -182,7 +182,7 @@ def refresh_admin(update, _):
     except KeyError:
         pass
 
-    update.effective_message.reply_text("Admin siyahısı yeniləndi!")
+    update.effective_message.reply_text("✅ Bot yenidən başladıldı\n✅ Admin siyahısı yeniləndi\n✅ 32 modulla əlaqə yaradıldı\nNəzrin❤️ Qrupunuzu tamamən qoruyur🥳")
 
 
 @run_async
