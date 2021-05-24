@@ -19,7 +19,8 @@ async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat = update.effective_chat
     user = update.effective_user
-    chat_id = message.chat.id
+    bot = context.bot
+    chat_id = update.effective_chat.id
     string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
