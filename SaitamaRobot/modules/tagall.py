@@ -10,9 +10,6 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
-    chat = update.effective_chat
-    user = update.effective_user
-    bot = context.bot
     chat_id = update.effective_chat.id
     string = ""
     limit = 1
@@ -56,7 +53,7 @@ async def tag(client, message):
 __mod_name__ = "🖇️Tağ"
 __help__ = """
 ✅ *Yalnız adminlər* tərəfindən istifadə oluna bilər !
-✅ Bu əmrlər *@ . / !* ilə işlədilir
+✅ Bu əmrlər *[@ . / !]* ilə işlədilir
 - `@all` : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
 - `@tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
 """
