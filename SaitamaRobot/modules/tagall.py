@@ -11,7 +11,9 @@ from SaitamaRobot import pbot
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
     chat_id = message.chat.id
-    string = ""
+    string = get_text(message)
+    if not string:
+        string = "🥳 Gəlin qrupa"
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
@@ -35,7 +37,7 @@ async def tag(client, message):
     string = get_text(message)
     if not string:
         string = "Bayaqdan səni gözləyirəm gəl qrupa 🥰"
-    limit = 1
+    limit = 15
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
         tag = member.user.mention
