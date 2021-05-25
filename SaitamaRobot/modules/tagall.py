@@ -10,7 +10,7 @@ from SaitamaRobot import pbot
 @pbot.on_message(filters.command('all', ['!', '@', '/', '.']) & ~filters.edited & ~filters.bot)
 async def all(client, message):
     await message.reply("🥳 Qarışıq Tağ Prosesi Başladı...")
-    chat_id = update.effective_chat.id
+    chat_id = message.chat.id
     string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
