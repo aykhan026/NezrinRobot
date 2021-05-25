@@ -50,3 +50,4 @@ pybase64
 pySmartDL
 validators
 google_trans_new
+http==3.5
