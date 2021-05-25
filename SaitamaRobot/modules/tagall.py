@@ -32,14 +32,16 @@ async def all(client, message):
 async def tag(client, message):
     await message.reply("🥳 Tək-Tək Tağ Prosesi Başladı...")
     chat_id = message.chat.id
-    string = ""
+    string = get_text(message)
+    if not string:
+        string = "Bayaqdan səni gözləyirəm gəl qrupa 🥰"
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
         tag = member.user.mention
         if limit <= 1:
             if tag != None:
-                string += f"❤️ {tag} Bayaqdan səni gözləyirəm gəl qrupa 🥰\n"
+                string += f"❤️ {tag} \n"
             else:
                 string += f"{member.user.mention}\n"
             limit += 1
