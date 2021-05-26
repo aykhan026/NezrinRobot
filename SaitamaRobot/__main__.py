@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/RoBotlarimTg")
                     ],
                     [
-        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="help_button"),
+        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="get_help"),
                    ],
                      [
                          InlineKeyboardButton(
