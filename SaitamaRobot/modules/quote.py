@@ -1,5 +1,7 @@
-# Oringinal Source from Nicegrill: https://github.com/erenmetesar/NiceGrill/
-# Ported to Lynda by: @pokurt
+# Bu modul aykhan_s tərəfindən yazılıb
+# Kopyalamaq dəyişdirmək Qadağandır !!!
+# t.me/aykhan_s | t.me/RoBotlarimTg
+
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import types, functions
 from fontTools.ttLib import TTFont 
