@@ -4,3 +4,5 @@ __help__ = """
 ✅ Bu əmrlər *[@ . / !]* ilə işlədilir
 - `@all` : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
 - `@tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
+
+"""
