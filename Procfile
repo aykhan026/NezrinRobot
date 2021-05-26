@@ -1,3 +1,2 @@
 worker: python3 -m SaitamaRobot
-worker: python3 main.py
-ps:scale worker=2
+worker: python main.py
