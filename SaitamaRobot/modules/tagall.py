@@ -13,7 +13,7 @@ async def all(client, message):
     chat_id = message.chat.id
     string = get_text(message)
     if not string:
-        string = "🥳 Gəlin qrupa"
+        string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
@@ -36,7 +36,7 @@ async def tag(client, message):
     chat_id = message.chat.id
     string = get_text(message)
     if not string:
-        string = "@all"
+        string = ""
     limit = 1
     icm = client.iter_chat_members(message.chat.id)
     async for member in icm:
