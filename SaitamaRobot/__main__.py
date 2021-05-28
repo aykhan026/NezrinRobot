@@ -210,10 +210,11 @@ def start(update: Update, context: CallbackContext):
                              text="🙋🏻‍♂️ Dəstək Qrupumuz",
                              url=f"https://t.me/RoBotlarimGroup")
                      ],
-                     InlineKeyboardButton(
+                     [
+                         InlineKeyboardButton(
                             text="✅Məni Qrupa Əlavə Et✅",
                             url="t.me/{}?startgroup=true".format(
-                                context.bot.username)
+                                context.bot.username))
                     ]]))
     else:
         update.effective_message.reply_text(
