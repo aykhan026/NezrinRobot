@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
         InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="get_help"),
                    ],
                     [
-        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="start_handler"),
+        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="help_back"),
                    ],
                      [
                          InlineKeyboardButton(
