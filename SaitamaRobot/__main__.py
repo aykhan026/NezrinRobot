@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 🙋🏻‍♀️Salam {} necəsən? mənim adım {}! 
 👮🏻‍♀️Mən Telegram qruplarını qorumaq üçün Azərbaycanca Olan Qrup İdarə Botuyam!.
-👩‍🔧Bütün əmrlər üçün klik et /help.
+👩‍🔧 Bacarıqlarımı görməy üçün buttona klik et
 """
 
 HELP_STRINGS = """
@@ -77,7 +77,7 @@ Və aşağıdakılar:
 
 SAITAMA_IMG = "https://telegra.ph/file/9b788bec1dd6dc3262fa0.jpg"
 
-DONATE_STRING = """Bəxşişə ehtiyyac yoxdu təşəkkürlər."""
+DONATE_STRING = """Bizi seçdiyiniz üçün təşəkkür edirik  🌚"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -194,11 +194,9 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[
-                        InlineKeyboardButton(
-                            text="✅Məni Qrupa Əlavə Et✅",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
-                    ],
+                        InlineKeyboardButton(text="❓ Bütün Əmrlər", 
+        url=f"t.me/NezrinRobot?start=help"),
+                   ],
                      [
                          InlineKeyboardButton(
                              text="👨‍💻 Sahibim",
@@ -207,57 +205,23 @@ def start(update: Update, context: CallbackContext):
                              text="🔔 Yeniliklər kanalı",
                              url="https://t.me/RoBotlarimTg")
                     ],
-                    [
-        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="donate_handler"),
-                   ],
-                    [
-        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="get_help"),
-                   ],
-                    [
-        InlineKeyboardButton(text="❓ Bütün Əmrlər", callback_data="help_back"),
-                   ],
                      [
                          InlineKeyboardButton(
                              text="🙋🏻‍♂️ Dəstək Qrupumuz",
                              url=f"https://t.me/RoBotlarimGroup")
-                     ]]))
+                     ],
+                     InlineKeyboardButton(
+                            text="✅Məni Qrupa Əlavə Et✅",
+                            url="t.me/{}?startgroup=true".format(
+                                context.bot.username))
+                    ]]))
     else:
         update.effective_message.reply_text(
-            "Salam Mən Nəzrin Xidmətinizdəyəm!"
+            "🧚‍♀Bəli, Mən Nəzrin♥️ İşləyirəm"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
-@run_async
-def NezrinRobot_about_callback(update, context):
-    query = update.callback_query
-    if query.data == "aboutmanu_":
-        query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
-            f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
-            f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
-                        ),
-                        InlineKeyboardButton(
-                            text="T & C", callback_data="aboutmanu_tac"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
-                        )
-                    ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
-                ]
-            ),
-        )
+
 
 
 # for test purposes
@@ -303,7 +267,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("*{}* modulu ilə bağlı məlumat:\n".format(
+            text = ("*{}* modulu haqqında məlumat:\n 👨🏻‍💻 *RoBotlarımTg* ".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
@@ -311,7 +275,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
-                        text="Geri", callback_data="help_back")
+                        text="⬅️Geri", callback_data="help_back")
                 ]]))
 
         elif prev_match:
@@ -355,7 +319,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Mənimlə PM-də əlaqəyə keç {module.capitalize()} üçün",
+                f"🧚‍♀ Mənə Şəxsidən Yaz {module.capitalize()} üçün",
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="Kömək",
@@ -364,7 +328,7 @@ def get_help(update: Update, context: CallbackContext):
                 ]]))
             return
         update.effective_message.reply_text(
-            "Mövcud əmrlər üçün mənimlə PM-də əlaqəyə keç.",
+            "Mövcud Əmrlər Üçün Mənə Şəxsidən Yaz",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                     text="Kömək",
@@ -584,7 +548,9 @@ def main():
     start_handler = CommandHandler("start", start)
 
     help_handler = CommandHandler("help", get_help)
-    help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
+    help_callback_handler = CallbackQueryHandler(
+        help_button, pattern=r"help_.*")
+
 
 
     settings_handler = CommandHandler("settings", get_settings)
