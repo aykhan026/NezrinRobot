@@ -309,6 +309,67 @@ def help_button(update, context):
     except BadRequest:
         pass
 
+@run_async
+def Nezrin_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "nezrin_":
+        query.message.edit_text(
+            text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
+                 ❍ I can restrict users.
+                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 ❍ I have an advanced anti-flood system.
+                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 ❍ I check for admins' permissions before executing any command and more stuffs
+                 \n_Masha's licensed under the GNU General Public License v3.0_
+                 Here is the [💾Repository](https://t.me/DaisyXNews).
+                 If you have any question about Emcee, let us know at @Emceesupport.""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "masha_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
+
+@run_async
+def Source_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "source_":
+        query.message.edit_text(
+            text=""" Hi..🤗 I'm *Emcee*
+                 \nHere is the [Source Code](https://t.me/DaisyXNews) .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=False,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "source_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
