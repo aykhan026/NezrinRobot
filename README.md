@@ -13,15 +13,6 @@
 
 ----
 
-## Qurulum
-Botu qurmaq üçün 
-1) Bot yaradın
-2) Heroku hesabı açın
-3) my.telegram.org dan APİ alın
-4) Aşağıdaki Deploy butonuna basın lazımi məlumatları doldurub deploy edin
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aykhan026/NezrinRobot)
-
 ### Qeyd
  Repoya <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən düzəliş olunub
 ## Copyright
