@@ -23,6 +23,6 @@ Botu qurmaq üçün
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aykhan026/NezrinRobot)
 
 ### Qeyd
-Botun tərcüməsi <a href="https://t.me/bakinech">Muko</a> aiddir. Repoda bəzi dəyişikliklər və problem <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən düzəldilib.
+ Repoya <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən düzəliş olunub
 ## Copyright
 Bizi telegramda izləyin <a href="https://t.me/RoBotlarimTg">RoBotlarım👨🏻‍💻</a>
