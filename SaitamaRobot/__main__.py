@@ -205,6 +205,10 @@ def start(update: Update, context: CallbackContext):
                              text="🔔 Yeniliklər kanalı",
                              url="https://t.me/RoBotlarimTg")
                     ],
+                    [
+        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="nezrin_"),
+        InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
+                     ],
                      [
                          InlineKeyboardButton(
                              text="🙋🏻‍♂️ Dəstək Qrupumuz",
