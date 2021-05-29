@@ -206,7 +206,7 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/RoBotlarimTg")
                     ],
                     [
-        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="nezrin_"),
+        InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
                      ],
                      [
@@ -314,9 +314,9 @@ def help_button(update, context):
         pass
 
 @run_async
-def Nezrin_about_callback(update: Update, context: CallbackContext):
+def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "nezrin_":
+    if query.data == "masha_":
         query.message.edit_text(
             text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
@@ -623,7 +623,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Nezrin_about_callback, pattern=r"nezrin_")
+    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
