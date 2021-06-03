@@ -4,7 +4,7 @@ import aiohttp
 from pyrogram import filters
 from cryptography.fernet import Fernet
 from SaitamaRobot import pbot
-from SaitamaRobot.utils import random_line
+from AykhanPro.komekci import random_line
 
 
 @pbot.on_message(filters.command("sehid") & ~filters.edited)
