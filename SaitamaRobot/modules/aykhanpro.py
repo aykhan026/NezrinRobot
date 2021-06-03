@@ -16,4 +16,22 @@ __help__ = """
 
 🎧*Musiqi modulu*
  - `/song <musiqi adı>` : Musiqini YouTubedən yükləyəcəm
+
+🇦🇿*Şəhidlər*
+ - `/sehid` - Bu əmr vaistəsiylə sizə *Şəhid* adları göndərəcəm
+*Allah bütün Şəhidimizə rəhmət eləsin*
+Qazilərimizə şəfa versin 
+Başın sağolsun Azərbaycan 🇦🇿
+Bazada *2881* Şəhid adı mövcuddur
+
+🤪*Anekdod*
+ - `/anekdod` Gülməli anekdodlar atacam
+
+👩🏻‍💼*Məsləhət*
+ - `/meslehet` Lazımlı məsləhətlər verəcəm
+
+👨🏻‍💻*Github*
+GitHub istifadəçisi haqqında məlumat alın
+ - `/github [istifadəçi adı]`
+
 """
