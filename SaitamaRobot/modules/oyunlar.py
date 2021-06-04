@@ -3,7 +3,7 @@ from telethon.tl.types import InputMediaDice
 from SaitamaRobot.events import register
 
 
-@register(pattern="^/dice(?: |$)(.*)")
+@register(pattern="^/zer(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -23,7 +23,7 @@ async def _(event):
             pass
 
 
-@register(pattern="^/dart(?: |$)(.*)")
+@register(pattern="^/ox(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -43,7 +43,7 @@ async def _(event):
             pass
 
 
-@register(pattern="^/ball(?: |$)(.*)")
+@register(pattern="^/basket(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -66,11 +66,11 @@ async def _(event):
 
 __help__ = """
  *Play Game With Emojis:*
-  - /dice or /dice 1 to 6 any value
-  - /ball or /ball 1 to 5 any value
-  - /dart or /dart 1 to 6 any value
+  - `/zer` 🎲 Bir zər at
+  - `/ox` 🎯 Bir ox at
+  - `/basket` 🏀 Bir basket at
  Usage: hahaha just a magic.
  warning: you would be in trouble if you input any other value than mentioned.
 """
 
-__mod_name__ = "Game"
+__mod_name__ = "Oyunlar"
