@@ -65,12 +65,11 @@ async def _(event):
 
 
 __help__ = """
- *Play Game With Emojis:*
+ *Şansını yoxla* 😉
   - `/zer` 🎲 Bir zər at
   - `/ox` 🎯 Bir ox at
   - `/basket` 🏀 Bir basket at
- Usage: hahaha just a magic.
- warning: you would be in trouble if you input any other value than mentioned.
+
 """
 
-__mod_name__ = "Oyunlar"
+__mod_name__ = "🎮Oyunlar"
