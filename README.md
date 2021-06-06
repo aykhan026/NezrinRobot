@@ -14,6 +14,6 @@
 ----
 
 ### Qeyd
- Repoya <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən düzəliş olunub
+ Repo <a href="https://t.me/aykhan_s">Aykhan</a> tərəfindən hazırlanıb
 ## Copyright
 Bizi telegramda izləyin <a href="https://t.me/RoBotlarimTg">RoBotlarım👨🏻‍💻</a>
