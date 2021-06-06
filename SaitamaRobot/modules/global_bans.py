@@ -138,7 +138,7 @@ def gban(update: Update, context: CallbackContext):
 
         return
 
-    message.reply_text("za!")
+    message.reply_text("Baş Üstə Boss")
 
     start_time = time.time()
     datetime_fmt = "%Y-%m-%dT%H:%M"
@@ -151,12 +151,12 @@ def gban(update: Update, context: CallbackContext):
         chat_origin = "<b>{}</b>\n".format(chat.id)
 
     log_message = (
-        f"#GBANNED\n"
-        f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
+        f"YENİ GBAN\n"
+        f"<b>Qrup:</b> <code>{chat_origin}</code>\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>Banned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
-        f"<b>Banned User ID:</b> <code>{user_chat.id}</code>\n"
-        f"<b>Event Stamp:</b> <code>{current_time}</code>")
+        f"<b>İstifadəçi Adı:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
+        f"<b>İstifadəçi İD:</b> <code>{user_chat.id}</code>\n"
+        f"<b>Tarix:</b> <code>{current_time}</code>")
 
     if reason:
         if chat.type == chat.SUPERGROUP and chat.username:
@@ -227,9 +227,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Hazır! Gban edildi.", parse_mode=ParseMode.HTML)
+        message.reply_text("Bu istifadəçini Qlobal Banladım!", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Hazır! Gban edildi.", parse_mode=ParseMode.HTML)
+        message.reply_text("Bu istifadəçini Qlobal Banladım!", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
@@ -281,12 +281,12 @@ def ungban(update: Update, context: CallbackContext):
         chat_origin = f"<b>{chat.id}</b>\n"
 
     log_message = (
-        f"#UNGBANNED\n"
-        f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
+        f"YENİ #UnGban\n"
+        f"<b>Qrup:</b> <code>{chat_origin}</code>\n"
         f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>Unbanned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
-        f"<b>Unbanned User ID:</b> <code>{user_chat.id}</code>\n"
-        f"<b>Event Stamp:</b> <code>{current_time}</code>")
+        f"<b>İstifadəçi Adı:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
+        f"<b>İstifadəçi İD:</b> <code>{user_chat.id}</code>\n"
+        f"<b>Tarix:</b> <code>{current_time}</code>")
 
     if EVENT_LOGS:
         try:
@@ -390,7 +390,7 @@ def check_and_ban(update, user_id, should_message=True):
         if should_message:
             update.effective_message.reply_text(
                 f"<b>Diqqət</b>: Bu istifadəçi qlobal olaraq banlandı.\n"
-                f"<code>*onu buradan banlayıram*</code>.\n"
+                f"<code>Onu buradan banlayıram</code>.\n"
                 f"<b>Appeal chat</b>: {SPAMWATCH_SUPPORT_CHAT}\n"
                 f"<b>ID</b>: <code>{sw_ban.id}</code>\n"
                 f"<b>Səbəb</b>: <code>{html.escape(sw_ban.reason)}</code>",
@@ -401,7 +401,7 @@ def check_and_ban(update, user_id, should_message=True):
         update.effective_chat.kick_member(user_id)
         if should_message:
             text = f"<b>Diqqət</b>: Bu istifadəçi qlobal olaraq banlandı.\n" \
-                   f"<code>*onu buradan banlayıram*</code>.\n" \
+                   f"<code>Onu buradan banlayıram</code>.\n" \
                    f"<b>Appeal chat</b>: @{SUPPORT_CHAT}\n" \
                    f"<b>ID</b>: <code>{user_id}</code>"
             user = sql.get_gbanned_user(user_id)
