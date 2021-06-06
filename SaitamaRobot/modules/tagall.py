@@ -81,5 +81,6 @@ __help__ = """
 ✅ *Yalnız adminlər* tərəfindən istifadə oluna bilər !
 ✅ Bu əmrlər *[@ . / !]* ilə işlədilir
 - `@all` : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
-- `@tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
+- `.tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
+- `!tagstop` Aktiv tağ etmə prosesini dayandırır
 """
