@@ -78,11 +78,13 @@ async def tagstop(client, message):
 
 __mod_name__ = "🖇️Tağ"
 __help__ = """
+
 ✅ *Yalnız adminlər* tərəfindən istifadə oluna bilər !
 ✅ Bu əmrlər *[@ . / !]* ilə işlədilir
-- `@all` : Son görülməsi yaxın olan hərkəsi qarışıq tağ edər
-- `.tag` : Son görülməsi yaxın olan hər kəsi tək tək tağ edər
-- `/tagall` : Qrupdan 100 nəfəri tağ edər
-- `/admin` : Qrup adminlərini tağ edər
-- `!tagstop` Aktiv tağ prosesini dayandırır
+
+- `@all` : Son görülməsi yaxın olan hərkəsi qarışıq *tağ edər*
+- `.tag` : Son görülməsi yaxın olan hər kəsi tək tək *tağ edər*
+- `/tagall` : Qrupdan *100* nəfəri *tağ edər*
+- `/admin` : Qrup adminlərini *tağ edər*
+- `!tagstop` Aktiv tağ prosesini *dayandırır*
 """
