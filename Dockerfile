@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-WORKDIR /root/NezrinRobot
+WORKDIR /root/SaitamaRobot
 
 #Copy config file to /root/SaitamaRobot/SaitamaRobot
 COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/NezrinRobot/SaitamaRobot/
