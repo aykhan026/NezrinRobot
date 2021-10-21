@@ -72,7 +72,7 @@ COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobo
 
 ENV PATH="/home/bot/bin:$PATH"
 
-RUN cd /NezrinRobot
+RUN cd /root/NezrinRobot
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
