@@ -64,16 +64,13 @@ RUN apt update && apt upgrade -y && \
 
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
-
-WORKDIR /root/SaitamaRobot
-
-#Copy config file to /root/SaitamaRobot/SaitamaRobot
-COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/NezrinRobot/SaitamaRobot/
-
-ENV PATH="/home/bot/bin:$PATH"
-
-# Install requirements
+COPY . /NezrinRobot/
+RUN cd NezrinRobot
+WORKDIR /NezrinRobot
 RUN pip3 install -U -r requirements.txt
-
+ENV PATH="/home/bot/bin:$PATH"
 # Starting Worker
 CMD ["python3","-m","SaitamaRobot"]
+
+
+
