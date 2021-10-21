@@ -33,7 +33,7 @@ class Config(object):
     EVENT_LOGS = -1001456155319  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgres://xgwjridmfebpna:2c8caa89a016e11aacba85822213349c8db16a714cecf8c848f78e96cf4c2892@ec2-54-225-214-37.compute-1.amazonaws.com:5432/dvnfn04k9beug'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:631T2dGYEfANXb0sORrY@containers-us-west-14.railway.app:6631/railway'  # needed for any database modules
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
@@ -66,7 +66,7 @@ class Config(object):
     AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-
+    ALLOW_CHATS = None
 
 class Production(Config):
     LOGGER = True
