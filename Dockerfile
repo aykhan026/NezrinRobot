@@ -65,10 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/NezrinRobot
-WORKDIR /root/SaitamaRobot
-
-#Copy config file to /root/SaitamaRobot/SaitamaRobot
-COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/SaitamaRobot/SaitamaRobot/
+WORKDIR /root/NezrinRobot
 
 ENV PATH="/home/bot/bin:$PATH"
 
