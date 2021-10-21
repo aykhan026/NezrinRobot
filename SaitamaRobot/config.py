@@ -3,6 +3,14 @@ import json
 import os
 
 
+sudos = 1801589805
+devs = 1801589805
+supports = 1801589805
+whitelists = 1801589805
+tigers = 1801589805
+spammers = 1801589805
+
+
 def get_user_list(config, key):
     with open('{}/SaitamaRobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
@@ -36,7 +44,7 @@ class Config(object):
 
     #OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list('dev.json', 'sudos')
+    DRAGONS = ('sudos')
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list('elevated_users.json', 'devs')
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
