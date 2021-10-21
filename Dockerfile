@@ -65,8 +65,6 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/SaitamaRobot
-RUN git clone -b shiken https://github.com/aykhan026/NezrinRobot /root/aykhan_s
 WORKDIR /root/NezrinRobot
 
 #Copy config file to /root/SaitamaRobot/SaitamaRobot
