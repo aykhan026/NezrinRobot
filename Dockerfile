@@ -71,7 +71,7 @@ ENV PATH="/home/bot/bin:$PATH"
 
 RUN cd /root/NezrinRobot
 # Install requirements
-RUN pip3 install -U -r requirements.txt
+RUN pip3 install -U -r /root/NezrinRobot/requirements.txt
 
 # Starting Worker
 CMD ["python3","-m","SaitamaRobot"]
