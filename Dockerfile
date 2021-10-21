@@ -1,11 +1,13 @@
-# We're using Debian Slim Buster image
+# aykhan_s | RoBotlarimTg
+# NezrinRobot Dockerfile
+
 FROM python:3.8.5-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
 
 RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
-# Installing Required Packages
+# Tələblərin quraşdırılması
 RUN apt update && apt upgrade -y && \
     apt install --no-install-recommends -y \
     debian-keyring \
@@ -61,22 +63,15 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Pypi package Repo upgrade
+# Pypi paketi güncəlləmə
 RUN pip3 install --upgrade pip setuptools
-
-# Copy Python Requirements to /root/NezrinRobot
-RUN git clone -b shiken https://github.com/aykhan026/NezrinRobot /root/NezrinRobot
-WORKDIR /root/NezrinRobot
-
-#Copy config file to /root/NezrinRobot/SaitamaRobot
-COPY ./SaitamaRobot/sample_config.py ./SaitamaRobot/config.py* /root/NezrinRobot/SaitamaRobot/
-
+RUN cd /
+COPY . /NezrinRobot/
+RUN cd NezrinRobot
+WORKDIR /NezrinRobot
 ENV PATH="/home/bot/bin:$PATH"
-
 RUN cd /NezrinRobot
-
-# Install requirements
+# Tələblər
 RUN pip3 install -U -r requirements.txt
-
-# Starting Worker
-CMD ["python3","-m","SaitamaRobot"]
+# Başlat
+CMD python3 -m SaitamaRobot
